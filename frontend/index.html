@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HackerTrack Bookmarks</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- My scripts -->
+    <script src="angular.js"></script>
+    <script src="bookmark.js"></script>
+  </head>
+  <body ng-app="bookmark-app" ng-controller="MainController">
+    <h1>Matthew's Bookmarks</h1>
+    <form class="addForm">
+      <label>Bookmark Name:</label><br>
+      <input ng-model="name" type="text" size="40" placeholder="Bookmark Name"><br>
+      <label>Bookmark URL:</label><br>
+      <input ng-model="url" type="text" size="40" placeholder="Bookmark URL"><br>
+      <p>Copy entire url and paste into form.</p>
+      <label>Description:</label><br>
+      <input ng-model="description" type="text" size="75" placeholder="Description"><br>
+      <button class="addbutton" type="submit" ng-click="addBookmark()">Add Bookmark</button>
+    </form>
+    <ng-view>
+        <div class="row">
+          <div class="col-xs-4 bookmarks"  ng-repeat="data in data.bookmarks"><a href="{{data.url}}" ng-click="updateClicks(data)" target="_blank">{{data.name}}</a><button type="submit" ng-click="remove(data)">Remove</button><br>
+          {{data.description}}<br>
+          Clicks: {{data.clicks}}</div>
+      </div>
+    </ng-view>
+  </body>
+</html>

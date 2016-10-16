@@ -1,0 +1,19 @@
+h1 {
+  color: red;
+}
+.addbutton {
+  margin-left: 0;
+}
+button {
+  margin-left: 25px;
+}
+body {
+  margin-left: 25px;
+}
+.addForm {
+  margin-bottom: 50px;
+}
+.bookmarks {
+  margin-top: 10px;
+  
+}

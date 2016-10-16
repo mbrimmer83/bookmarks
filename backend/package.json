@@ -1,0 +1,26 @@
+{
+  "name": "bookmarks",
+  "version": "1.0.0",
+  "description": "hacker track bookmarks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbrimmer83/hackertrack.git"
+  },
+  "author": "Matthew Brimmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbrimmer83/hackertrack/issues"
+  },
+  "homepage": "https://github.com/mbrimmer83/hackertrack#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.5"
+  }
+}
