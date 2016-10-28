@@ -1,6 +1,6 @@
 var app = angular.module('bookmark-app', []);
 
-var API = 'https://bookmarks-vjramddfjc.now.sh';
+var API = 'https://bookmarks-iwzyrxfszq.now.sh';
 
 app.factory('backEnd', function($http) {
   return {
